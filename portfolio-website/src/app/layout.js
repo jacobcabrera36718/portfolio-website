@@ -1,11 +1,11 @@
 import '../styles/globals.css';
-import background from '../components/background';
+import WaveBackground from '../components/Background/WaveBackground';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <background />
+        <WaveBackground />
         {children}
       </body>
     </html>

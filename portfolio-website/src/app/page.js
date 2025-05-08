@@ -1,9 +1,9 @@
 import '../styles/globals.css'
-import Footer from '../components/Footer';
+import Footer from '../components/footer';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
+<main className="min-h-screen text-gray-900">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center py-20 px-4">
         <h1 className="text-5xl font-bold mb-4">
@@ -18,16 +18,6 @@ export default function Home() {
         >
           View My Projects
         </a>
-      </section>
-
-      {/* About Preview */}
-      <section className="bg-gray-100 py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold mb-4">About Me</h2>
-          <p className="text-lg text-gray-700">
-            I'm passionate about crafting digital experiences that are both functional and beautiful. With a focus on clean code and usability, I bring ideas to life on the web.
-          </p>
-        </div>
       </section>
     </main>
   );
