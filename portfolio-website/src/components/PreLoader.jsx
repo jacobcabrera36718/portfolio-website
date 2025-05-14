@@ -1,6 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
 import ClientShaderWrapper from './ClientShaderWrapper';
+import { Anton } from 'next/font/google';
+
+const anton = Anton({ weight: '400', subsets: ['latin'] });
+
 
 export default function Preloader({ onComplete }) {
   const [visible, setVisible] = useState(true);
@@ -43,10 +47,11 @@ export default function Preloader({ onComplete }) {
       style={{ opacity: fade ? 0 : 1 }}
     >
       <ClientShaderWrapper />
-      <h1 className="z-10 text-#e4e2dd text-3xl font-bold tracking-widest font-mono">
+      <h1 className={`z-10 text-[#e4e2dd] text-3xl uppercase tracking-widest ${anton.className}`}>
         {typedText}
         <span className="animate-pulse">|</span>
       </h1>
+
     </div>
   );
 }
