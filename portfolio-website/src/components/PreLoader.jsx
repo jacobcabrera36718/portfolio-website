@@ -39,12 +39,11 @@ export default function Preloader({ onComplete }) {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center overflow-hidden transition-opacity duration-1000 ease-in-out ${
-        fade ? 'opacity-0' : 'opacity-100'
-      }`}
+      className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden transition-opacity duration-1000 ease-in-out"
+      style={{ opacity: fade ? 0 : 1 }}
     >
       <ClientShaderWrapper />
-      <h1 className="z-10 text-white text-3xl font-bold tracking-widest font-mono">
+      <h1 className="z-10 text-#e4e2dd text-3xl font-bold tracking-widest font-mono">
         {typedText}
         <span className="animate-pulse">|</span>
       </h1>
