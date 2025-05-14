@@ -1,10 +1,6 @@
-import '../styles/globals.css'
-import Footer from '../components/footer';
-
 export default function Home() {
   return (
-<main className="min-h-screen text-gray-900">
-      {/* Hero Section */}
+    <>
       <section className="flex flex-col items-center justify-center text-center py-20 px-4">
         <h1 className="text-5xl font-bold mb-4">
           Hi, I'm <span className="text-blue-600">Your Name</span>
@@ -19,6 +15,6 @@ export default function Home() {
           View My Projects
         </a>
       </section>
-    </main>
+    </>
   );
 }
