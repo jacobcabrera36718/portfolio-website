@@ -8,8 +8,8 @@ const raleway = Raleway({ weight: '400', subsets: ['latin'] });
 
 const navItems = [
   { number: '01', label: 'HOME', href: '/' },
-  { number: '02', label: 'ABOUT', href: '/about-me' },
-  { number: '03', label: 'PROJECTS', href: '/projects' },
+  { number: '02', label: 'PROJECTS', href: '/projects' },
+  { number: '03', label: 'ABOUT', href: '/about' },
   { number: '04', label: 'CONTACT', href: '/contact' },
 ];
 
