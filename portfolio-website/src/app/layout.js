@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className="relative flex flex-col min-h-screen bg-black overflow-hidden">
+      <body className="relative flex flex-col min-h-screen bg-black overflow-y-auto">
         <ClientShaderWrapper />
 
         {!loaded ? (
