@@ -1,6 +1,7 @@
 import { Anton } from 'next/font/google';
 import { Raleway } from 'next/font/google';
 import Github from '../../components/About/Github';
+import NavBar from '../../components/NavBar';
 
 const anton = Anton({ weight: '400', subsets: ['latin'] });
 const raleway = Raleway({ weight: '400', subsets: ['latin'] });
@@ -8,6 +9,7 @@ const raleway = Raleway({ weight: '400', subsets: ['latin'] });
 export default function AboutPage() {
   return (
     <>
+      <NavBar />
       <section className="relative mt-[28vh] ml-[460px] text-[#e4e2dd] flex gap-16 pr-12">
         {/* Left Side (Title or Profile Pic) */}
         <div className="min-w-[300px]">
