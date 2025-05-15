@@ -14,7 +14,7 @@ function Github() {
         blockMargin={5}
         fontSize={16}
         theme={{
-          dark: ['#161b22', '#0e4429', '#006d32', '#26a641', '#39d353'],
+          dark: ['#1c1c1c', '#3d3d3d', '#5e5e5e', '#7f7f7f', '#a0a0a0'],
         }}
         colorScheme="dark"
       />
