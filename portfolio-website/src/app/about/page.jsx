@@ -22,7 +22,7 @@ export default function AboutPage() {
         </div>
 
         {/* Right Side (Text with Raleway font) */}
-        <div className={`max-w-[800px] space-y-8 text-lg -ml-[45px] leading-relaxed ${raleway.className}`}>
+        <div className={`max-w-[725px] space-y-6 text-lg -ml-[100px] leading-relaxed ${raleway.className}`}>
           <p>
             Hi, I'm <strong>Jacob Cabrera</strong> a recent Computer Science graduate from Florida State University with a passion for full-stack development, machine learning, and fintech. During my time at FSU, I built AI-powered trading bots, financial dashboards, and cross-platform eCommerce platforms that combine technical precision with real-world impact.
           </p>

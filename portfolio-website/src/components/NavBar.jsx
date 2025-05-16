@@ -13,7 +13,7 @@ const navLinks = [
 
 export default function NavBar() {
   return (
-    <nav className={`fixed top-4 right-6 z-40 flex space-x-6 text-[#e4e2dd] text-sm tracking-wide uppercase ${anton.className}`}>
+    <nav className={`fixed top-20 right-20 z-40 flex space-x-6 text-[#e4e2dd] text-sm tracking-wide uppercase ${anton.className}`}>
       {navLinks.map(({ label, href }) => (
         <Link
           key={label}
