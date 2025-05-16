@@ -43,6 +43,8 @@ export default function AboutPage() {
       <Techstack />
       <Toolstack/>
       <Github />
+
+      <div className="mb-32 md:mb-30 lg:mb-40"/>
     </>
   );
 }

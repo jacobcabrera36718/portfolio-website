@@ -9,7 +9,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className={`fixed bottom-0 left-0 right-0 z-20 bg-transparent backdrop-filter backdrop-blur-[1px] py-3 ${raleway.className} text-[#e4e2dd]`}>
+    <footer className={`mt-auto z-20 bg-transparent backdrop-filter backdrop-blur-[1px] py-3 ${raleway.className} text-[#e4e2dd]`}>
       <div className="w-full flex flex-col md:flex-row justify-between items-center text-sm gap-2 px-4 md:px-8">
         
         {/* left section */}
