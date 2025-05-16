@@ -1,6 +1,9 @@
 import { Anton } from 'next/font/google';
 import { Raleway } from 'next/font/google';
 import Github from '../../components/About/Github';
+import NavBar from '../../components/NavBar';
+import Techstack from '../../components/About/TechStack';
+import Toolstack from '../../components/About/ToolStack';
 
 const anton = Anton({ weight: '400', subsets: ['latin'] });
 const raleway = Raleway({ weight: '400', subsets: ['latin'] });
@@ -8,6 +11,7 @@ const raleway = Raleway({ weight: '400', subsets: ['latin'] });
 export default function AboutPage() {
   return (
     <>
+      <NavBar />
       <section className="relative mt-[28vh] ml-[460px] text-[#e4e2dd] flex gap-16 pr-12">
         {/* Left Side (Title or Profile Pic) */}
         <div className="min-w-[300px]">
@@ -18,7 +22,7 @@ export default function AboutPage() {
         </div>
 
         {/* Right Side (Text with Raleway font) */}
-        <div className={`max-w-[800px] space-y-8 text-lg -ml-[45px] leading-relaxed ${raleway.className}`}>
+        <div className={`max-w-[725px] space-y-6 text-lg -ml-[100px] leading-relaxed ${raleway.className}`}>
           <p>
             Hi, I'm <strong>Jacob Cabrera</strong> a recent Computer Science graduate from Florida State University with a passion for full-stack development, machine learning, and fintech. During my time at FSU, I built AI-powered trading bots, financial dashboards, and cross-platform eCommerce platforms that combine technical precision with real-world impact.
           </p>
@@ -36,8 +40,11 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
-
+      <Techstack />
+      <Toolstack/>
       <Github />
+
+      <div className="mb-32 md:mb-30 lg:mb-40"/>
     </>
   );
 }
