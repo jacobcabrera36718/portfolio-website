@@ -2,6 +2,8 @@ import { Anton } from 'next/font/google';
 import { Raleway } from 'next/font/google';
 import Github from '../../components/About/Github';
 import NavBar from '../../components/NavBar';
+import Techstack from '../../components/About/TechStack';
+import Toolstack from '../../components/About/ToolStack';
 
 const anton = Anton({ weight: '400', subsets: ['latin'] });
 const raleway = Raleway({ weight: '400', subsets: ['latin'] });
@@ -38,7 +40,8 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
-
+      <Techstack />
+      <Toolstack/>
       <Github />
     </>
   );
