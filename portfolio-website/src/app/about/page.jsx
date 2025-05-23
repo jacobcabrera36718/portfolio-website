@@ -1,5 +1,6 @@
-import { Anton } from 'next/font/google';
-import { Raleway } from 'next/font/google';
+'use client';
+
+import { Anton, Raleway } from 'next/font/google';
 import Github from '../../components/About/Github';
 import NavBar from '../../components/NavBar';
 import Techstack from '../../components/About/TechStack';
@@ -12,39 +13,41 @@ export default function AboutPage() {
   return (
     <>
       <NavBar />
-      <section className="relative mt-[28vh] ml-[460px] text-[#e4e2dd] flex gap-16 pr-12">
-        {/* Left Side (Title or Profile Pic) */}
-        <div className="min-w-[300px]">
-          <h1 className={`text-6xl font-bold mb-2 ${anton.className}`}>ABOUT</h1>
-          <h1 className={`text-9xl font-bold mb-4 ${anton.className}`}>ME</h1>
-          {/* Optional: Profile picture can go here */}
-          {/* <img src="/profile.jpg" alt="Jacob Cabrera" className="rounded-lg mt-4 w-48" /> */}
-        </div>
 
-        {/* Right Side (Text with Raleway font) */}
-        <div className={`max-w-[725px] space-y-6 text-lg -ml-[100px] leading-relaxed ${raleway.className}`}>
-          <p>
-            Hi, I'm <strong>Jacob Cabrera</strong> a recent Computer Science graduate from Florida State University with a passion for full-stack development, machine learning, and fintech. During my time at FSU, I built AI-powered trading bots, financial dashboards, and cross-platform eCommerce platforms that combine technical precision with real-world impact.
-          </p>
+      {/* About Me Section */}
+      <section className="relative mt-[30vh] px-4 sm:px-8 md:px-12 lg:px-24 xl:px-32 text-[#e4e2dd] max-w-screen-xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12">
 
-          <p>
-            My background includes hands-on experience with <em>Python, C++, SQL, JavaScript</em>, and modern frameworks like <em>React, Node.js, .NET MAUI, and TensorFlow</em>. I enjoy solving problems at the intersection of finance and technology, especially when it involves data-driven decision-making and scalable architectures.
-          </p>
+          {/* Left Side: ABOUT ME */}
+          <div className="min-w-[160px] lg:min-w-[260px] text-left space-y-1">
+            <h1 className={`text-4xl sm:text-6xl font-bold ${anton.className}`}>ABOUT</h1>
+            <h1 className={`text-7xl sm:text-9xl font-bold ${anton.className}`}>ME</h1>
+          </div>
 
-          <p>
-            Outside the tech world, you’ll probably find me at the beach, fishing, or hitting the gym. I believe balancing technical intensity with time outdoors helps keep my creativity and energy high.
-          </p>
-
-          <p>
-            I'm always looking to build something new, improve existing systems, and learn from others. Let’s build the future one project at a time.
-          </p>
+          {/* Right Side: Text Paragraphs */}
+          <div className={`w-full lg:max-w-[800px] space-y-6 text-base sm:text-lg leading-relaxed ${raleway.className}`}>
+            <p>
+              Hi, I'm <strong>Jacob Cabrera</strong> a recent Computer Science graduate from Florida State University with a passion for full-stack development, machine learning, and fintech. During my time at FSU, I built AI-powered trading bots, financial dashboards, and cross-platform eCommerce platforms that combine technical precision with real-world impact.
+            </p>
+            <p>
+              My background includes hands-on experience with <em>Python, C++, SQL, JavaScript</em>, and modern frameworks like <em>React, Node.js, .NET MAUI, and TensorFlow</em>. I enjoy solving problems at the intersection of finance and technology, especially when it involves data-driven decision-making and scalable architectures.
+            </p>
+            <p>
+              Outside the tech world, you’ll probably find me at the beach, fishing, or hitting the gym. I believe balancing technical intensity with time outdoors helps keep my creativity and energy high.
+            </p>
+            <p>
+              I'm always looking to build something new, improve existing systems, and learn from others. Let’s build the future one project at a time.
+            </p>
+          </div>
         </div>
       </section>
+
+      {/* Skills + GitHub Section */}
       <Techstack />
-      <Toolstack/>
+      <Toolstack />
       <Github />
 
-      <div className="mb-32 md:mb-30 lg:mb-40"/>
+      <div className="mb-32 md:mb-40 lg:mb-40" />
     </>
   );
 }
