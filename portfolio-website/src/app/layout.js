@@ -1,5 +1,5 @@
 'use client';
-import '../styles/globals.css';
+import './globals.css';
 import Footer from '../components/footer';
 import ClientShaderWrapper from '../components/ClientShaderWrapper';
 import Preloader from '../components/Preloader';
